@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Predict-O</title>
+    <link rel="shortcut icon" href="\Users\Sreerag Dileep\Documents\project\icon.ico" />
+    </head>
+    <style>
+        body{background-image: url("https://blobfitness.com/public/images/overcoming-setbacks-and-injuries.jpg")}
+        .center     { text-align: center;
+                     }
+        .a          { font-size:70px ;
+                      font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+                      color:#282a2e;
+                      margin-top:100px;
+                      ;
+                     }
+        .b         { font-size:30px ;
+                     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+                     }
+        .info     { padding-left: 370px;
+                    font-family: Haettenschweiler, 'Arial Narrow Bold', serif;
+                    text-align: left;
+                     }
+        input[type=submit]{background-color: #4f4f52;
+                           border: none;
+                           border-radius: 18px;
+                           color: white;
+                           padding: 8px 16px;
+                           text-decoration: ;
+                           margin: 1px 2px;
+                           cursor: pointer;
+                          }
+                          
+        input[type=file]{background-color: #aeaeaf;
+                           border-radius: 10px;
+                           border: none;
+                           color: rgb(10, 10, 10);
+                           padding: 3px 10px;
+                           text-decoration: none;
+                           margin: 1px 2px;
+                           cursor: pointer;opacity: 0.75;}
+    </style>
+<body>
+    <div class="center">
+    <p class="a">Predict-O</p>
+    <p class="b">A Student Performance prediction system</p>
+    
+    
+    <p class="info">This is a platform that helps you predict the result of upcoming semesters by 
+        analysing your grades of previos semesters. <br>For this prediction you will need to upload 
+        a csv file containing your scores till date. kindly read the  
+        <a href="\Users\Sreerag Dileep\Desktop\resume\resume.pdf">instructions</a> 
+        before<br>uploading your file.
+    
+    </p>
+    <p>Upload your csv file here</p>
+    <form action="getfile" method="POST" enctype="multipart/form-data">
+    <input type="file" id="docpicker" name="inputfile"
+    accept=".csv"><br><br>
+    <input type="submit" value="St">
+    </form>
+</div>
+</body>
+</html>
